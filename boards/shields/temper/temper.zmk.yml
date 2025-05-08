@@ -1,8 +1,8 @@
 file_format: "1"
-id: komoji
-name: LOWERCASE komoji
+id: temper
+name: Chocofi Temper
 type: shield
-url: 
+url: https://github.com/raeedcho/chocofi-temper
 requires: [pro_micro]
 exposes: [i2c_oled]
 features:
@@ -10,5 +10,5 @@ features:
   - display
   - underglow
 siblings:
-  - komoji_left
-  - komoji_right
+  - temper_left
+  - temper_right
