@@ -1,0 +1,16 @@
+if SHIELD_KOMOJI_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "komoji"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_KOMOJI_LEFT || SHIELD_KOMOJI_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif

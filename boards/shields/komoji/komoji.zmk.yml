@@ -1,0 +1,14 @@
+file_format: "1"
+id: komoji
+name: LOWERCASE komoji
+type: shield
+url: 
+requires: [nice!nano]
+exposes: [i2c_oled]
+features:
+  - keys
+  - display
+  - underglow
+siblings:
+  - komoji_left
+  - komoji_right
