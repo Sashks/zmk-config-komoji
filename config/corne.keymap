@@ -70,7 +70,7 @@
         &none &kp EXCL &kp AT    &kp HASH  &kp DOLLAR &kp LBKT   &kp RBKT  &kp PLUS  &kp MINUS &kp ASTRK         &kp PRCNT &none
         &none &kp AMPS &kp UNDER &kp DQT   &kp SQT    &kp LPAR   &kp RPAR  &kp ENTER &kp ESC   &kp LC(B)         &kp DEL   &none
         &none &kp PIPE &kp TILDE &kp CARET &kp GRAVE  &kp LBRC   &kp RBRC  &kp EQUAL &kp TAB   &kp LG(LC(SPACE)) &kp BSLH  &none
-                                 &kp BSPC     &kp LSHIFT   &kp LSHFT  &kp SPACE &kp SPACE     &none
+                                 &kp BSPC     &kp LSHIFT   &kp LSHFT  &kp SPACE &kp SPACE     &kp SPACE
       >;
     };
 
@@ -83,7 +83,7 @@
         &none &none        &none    &kp UP   &none     &none          &kp ASTRK  &kp N7 &kp N8 &kp N9 &kp MINUS &none
         &none &kp LA(LEFT) &kp LEFT &kp DOWN &kp RIGHT &kp LA(RIGHT)  &kp SLASH  &kp N4 &kp N5 &kp N6 &kp PLUS  &none
         &none &none        &none    &none    &none     &none          &kp N0     &kp N1 &kp N2 &kp N3 &kp DOT   &none
-                                    &to L0   &kp BSPC  &kp LSHFT      &kp SPACE  &to L2 &none
+                                    &to L0   &kp BSPC  &kp LSHFT      &kp SPACE  &to L2 &kp SPACE
       >;
     };
 
