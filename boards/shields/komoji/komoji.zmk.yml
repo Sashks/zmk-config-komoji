@@ -3,7 +3,7 @@ id: komoji
 name: LOWERCASE komoji
 type: shield
 url: 
-requires: [nice!nano]
+requires: [pro_micro]
 exposes: [i2c_oled]
 features:
   - keys
