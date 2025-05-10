@@ -1,36 +1,36 @@
-# My keyboard layout
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="/docs/images/klor-font-logo-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="/docs/images/klor-font-logo-bright.svg">
+  <img alt="KLOR logo font" src="/docs/images/klor-font-logo-bright.svg">
+</picture>
 
-## Overview
+# ZMK CONFIG FOR THE KLOR SPLIT KEYBOARD
 
-A 36 keys split keyboard layout implemented with [ZMK](https://zmk.dev/).
+[Here](https://github.com/GEIGEIGEIST/qmk-config-klor) you can find the QMK config for the KLOR.\
+[Here](https://github.com/GEIGEIGEIST/klor) you can find the hardware files and build guide.
 
-The layout is designed for a keyboard with 3x5 main keys plus 3 thumb keys per split
-(e.g. [Corne Keyboard](https://github.com/foostan/crkbd)) and optimized to use VIM and tmux in macOS.
+KLOR is a 36-42 key column-staggered split keyboard. It supports a per key RGB matrix, encoders, OLED displays, a Pixart Paw3204 trackball and four different layouts, through brake off parts.
 
-## Layout
+![KLOR layouts](/docs/images/klor-layouts.svg)
 
-The layout design tries to adhere to the following concepts as much as possible:
+Polydactyl is the default layout. If you choose one of the other layouts you can use the matching template in the default keymap.
 
-- Familiarity with a standard keyboard
-- Avoid complexity as much as possible
-- Ergonomic design
-- Wireless ready
 
-![keyboard-layout](images/layout.png)
+## HOW TO USE
 
-### Legend
+- fork this repo
+- `git clone` your repo, to create a local copy on your PC (you can use the [command line](https://www.atlassian.com/git/tutorials) or [github desktop](https://desktop.github.com/))
+- adjust the klor.keymap file (find all the keycodes on [the zmk docs pages](https://zmk.dev/docs/codes/))
+- `git push` your repo to your fork
+- on the GitHub page of your fork navigate to "Actions"
+- scroll down and unzip the `firmware.zip` archive that contains the latest firmware
+- connect the left half of the KLOR to your PC, press reset twice
+- the keyboard should now appear as a mass storage device
+- drag'n'drop the `klor_left-nice_nano_v2-zmk.uf2` file from the archive onto the storage device
+- repeat this process with the right half and the `klor_right-nice_nano_v2-zmk.uf2` file.
 
-- PU/PD: Page Up/Page Down
-- 1P: 1Password
-- D1/D2/D3/D4: macOS shortcuts for navigating virtual desktops
-- BP/BN/BC: Bluetooth Previous/Next/Clear
-- tmux: Ctrl + B (tmux shortcut)
 
-## References
+## KNOWN ISSUES
 
-Most of the concepts used in this layout can be found in [rafaelromao](https://github.com/rafaelromao/keyboards)'s repo.
-
-## Resources
-
-- [ZMK](https://zmk.dev/docs)
-- [Keyboard Layout Editor](http://www.keyboard-layout-editor.com/#/gists/6bf91d85dfb6f360b1dd5082e9c93135)
+- The encoder on the secondary side doesn't work yet. This is a limitation of ZMK.
+- Need to add the code for the Pixart Paw3204 trackball.
