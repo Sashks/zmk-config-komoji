@@ -147,4 +147,23 @@
                         >;
                 };
         };
+
+        combos {
+        compatible = "zmk,combos";
+        combo_cut {
+            timeout-ms = ;
+            key-positions = <29 30>; // Z and X key positions in your default layer
+            bindings = <&kp LC(X)>;
+        };
+        combo_copy {
+            timeout-ms = ;
+            key-positions = <30 31>; // X and C key positions in your default layer
+            bindings = <&kp LC(C)>;
+        };
+        combo_paste {
+            timeout-ms = ;
+            key-positions = <31 32>; // C and V key positions in your default layer
+            bindings = <&kp LC(V)>;
+        };
+    }; // End of combos node
 };
