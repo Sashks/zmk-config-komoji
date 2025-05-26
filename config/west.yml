@@ -4,6 +4,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: m165437
       url-base: https://github.com/M165437 
+    - name: whoop-t 
+      url-base: https://github.com/whoop-t 
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -11,6 +13,9 @@ manifest:
       import: app/west.yml
     - name: nice-view-gem 
       remote: m165437 
+      revision: main 
+    - name: nice-luffy-wanted 
+      remote: whoop-t 
       revision: main 
   self:
     path: config
